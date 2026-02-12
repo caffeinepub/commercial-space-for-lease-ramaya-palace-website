@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Website updates: add a new Property Gallery item with a provided image placed after the Terrace/Rooftop section, titled \"High Capacity 26 Passenger Lifts.\"",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Uploaded photo of two elevator doors in a modern lobby (high-capacity-26-passenger-lifts.dim_1536x1024.png)",
+  "existing_features": [
+    {
+      "id": "feature-add-the-uploaded-image-as-a-new-static-asset-in-the-frontend-and-reference-it-from-the-property-gallery",
+      "title": "Add the uploaded image as a new static asset in the frontend and reference it from the Property Gallery.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-property-gallery-list-to-include-a-new-gallery-card-immediately-after-the-existing-terrace-rooftop-item-with-the-visible-label-text-set-to-high-capacity-26-passenger-lifts",
+      "title": "Update the Property Gallery list to include a new gallery card immediately after the existing “Terrace / Rooftop” item, with the visible label text set to “High Capacity 26 Passenger Lifts”.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Add provided image to Property Gallery after Terrace/Rooftop with heading \"High Capacity 26 Passenger Lifts\"",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Add new Property Gallery image for “High Capacity 26 Passenger Lifts” after Terrace/Rooftop",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

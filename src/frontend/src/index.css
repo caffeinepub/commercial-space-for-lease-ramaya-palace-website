@@ -1,0 +1,274 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.625rem;
+        
+        /* Luxurious Navy & Champagne Gold Theme */
+        --background: 0.99 0 0;
+        --foreground: 0.18 0.025 245;
+        --card: 1 0 0;
+        --card-foreground: 0.18 0.025 245;
+        --popover: 1 0 0;
+        --popover-foreground: 0.18 0.025 245;
+        
+        /* Navy - Rich dark navy blue with higher contrast */
+        --primary: 0.18 0.12 245;
+        --primary-foreground: 0.99 0 0;
+        
+        /* Champagne Gold - Soft metallic upscale accent */
+        --secondary: 0.82 0.08 75;
+        --secondary-foreground: 0.18 0.025 245;
+        
+        --muted: 0.97 0.003 245;
+        --muted-foreground: 0.48 0.02 245;
+        
+        --accent: 0.97 0.003 245;
+        --accent-foreground: 0.18 0.025 245;
+        
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.985 0 0;
+        
+        --border: 0.92 0.008 245;
+        --input: 0.92 0.008 245;
+        --ring: 0.82 0.08 75;
+        
+        /* Custom luxury colors */
+        --navy: 0.18 0.12 245;
+        --navy-dark: 0.14 0.14 248;
+        --navy-light: 0.25 0.10 242;
+        --champagne: 0.82 0.08 75;
+        --champagne-dark: 0.72 0.10 70;
+        --champagne-light: 0.88 0.06 80;
+        --champagne-pale: 0.94 0.04 85;
+    }
+
+    .dark {
+        --background: 0.12 0.025 245;
+        --foreground: 0.99 0 0;
+        --card: 0.16 0.03 245;
+        --card-foreground: 0.99 0 0;
+        --popover: 0.16 0.03 245;
+        --popover-foreground: 0.99 0 0;
+        
+        --primary: 0.82 0.08 75;
+        --primary-foreground: 0.18 0.025 245;
+        
+        --secondary: 0.24 0.08 245;
+        --secondary-foreground: 0.99 0 0;
+        
+        --muted: 0.20 0.04 245;
+        --muted-foreground: 0.72 0.015 245;
+        
+        --accent: 0.24 0.08 245;
+        --accent-foreground: 0.99 0 0;
+        
+        --destructive: 0.704 0.191 22.216;
+        --destructive-foreground: 0.99 0 0;
+        
+        --border: 0.24 0.05 245;
+        --input: 0.24 0.05 245;
+        --ring: 0.82 0.08 75;
+        
+        --navy: 0.24 0.08 245;
+        --navy-dark: 0.18 0.10 248;
+        --navy-light: 0.30 0.06 242;
+        --champagne: 0.82 0.08 75;
+        --champagne-dark: 0.72 0.10 70;
+        --champagne-light: 0.88 0.06 80;
+        --champagne-pale: 0.94 0.04 85;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+}
+
+@layer utilities {
+    .text-navy {
+        color: oklch(var(--navy));
+    }
+    
+    .text-navy-dark {
+        color: oklch(var(--navy-dark));
+    }
+    
+    .text-navy-light {
+        color: oklch(var(--navy-light));
+    }
+    
+    .text-champagne {
+        color: oklch(var(--champagne));
+    }
+    
+    .text-champagne-dark {
+        color: oklch(var(--champagne-dark));
+    }
+    
+    .text-champagne-light {
+        color: oklch(var(--champagne-light));
+    }
+    
+    .text-champagne-pale {
+        color: oklch(var(--champagne-pale));
+    }
+    
+    .bg-navy {
+        background-color: oklch(var(--navy));
+    }
+    
+    .bg-navy-dark {
+        background-color: oklch(var(--navy-dark));
+    }
+    
+    .bg-navy-light {
+        background-color: oklch(var(--navy-light));
+    }
+    
+    .bg-champagne {
+        background-color: oklch(var(--champagne));
+    }
+    
+    .bg-champagne-dark {
+        background-color: oklch(var(--champagne-dark));
+    }
+    
+    .bg-champagne-light {
+        background-color: oklch(var(--champagne-light));
+    }
+    
+    .bg-champagne-pale {
+        background-color: oklch(var(--champagne-pale));
+    }
+    
+    .border-champagne {
+        border-color: oklch(var(--champagne));
+    }
+    
+    .border-champagne-light {
+        border-color: oklch(var(--champagne-light));
+    }
+    
+    /* Luxury gradient backgrounds */
+    .bg-luxury-gradient {
+        background: linear-gradient(135deg, oklch(var(--navy)) 0%, oklch(var(--navy-dark)) 100%);
+    }
+    
+    .bg-luxury-gradient-subtle {
+        background: linear-gradient(180deg, oklch(var(--background)) 0%, oklch(var(--muted) / 0.3) 100%);
+    }
+    
+    .bg-champagne-gradient {
+        background: linear-gradient(135deg, oklch(var(--champagne-light)) 0%, oklch(var(--champagne)) 100%);
+    }
+    
+    /* Glossy effect for premium elements */
+    .glossy {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .glossy::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, oklch(1 0 0 / 0.15), transparent);
+        transition: left 0.5s ease;
+    }
+    
+    .glossy:hover::before {
+        left: 100%;
+    }
+    
+    /* Enhanced shadow utilities */
+    .shadow-luxury {
+        box-shadow: 0 10px 40px -10px oklch(var(--navy) / 0.25), 
+                    0 4px 12px -4px oklch(var(--navy) / 0.15);
+    }
+    
+    .shadow-luxury-lg {
+        box-shadow: 0 20px 60px -15px oklch(var(--navy) / 0.35), 
+                    0 8px 20px -8px oklch(var(--navy) / 0.2);
+    }
+    
+    .shadow-champagne {
+        box-shadow: 0 8px 30px -8px oklch(var(--champagne) / 0.3), 
+                    0 4px 12px -4px oklch(var(--champagne) / 0.2);
+    }
+    
+    .shadow-champagne-glow {
+        box-shadow: 0 0 30px oklch(var(--champagne) / 0.25), 
+                    0 0 60px oklch(var(--champagne) / 0.15);
+    }
+    
+    /* Elegant divider with gradient */
+    .divider-luxury {
+        height: 1px;
+        background: linear-gradient(90deg, transparent, oklch(var(--champagne) / 0.5), transparent);
+    }
+    
+    .animate-fade-in {
+        animation: fadeIn 1s ease-in-out;
+    }
+    
+    .animate-fade-in-up {
+        animation: fadeInUp 0.8s ease-out;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom luxury scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: oklch(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, oklch(var(--champagne) / 0.4), oklch(var(--champagne) / 0.25));
+    border-radius: 6px;
+    border: 2px solid oklch(var(--background));
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, oklch(var(--champagne) / 0.6), oklch(var(--champagne) / 0.4));
+}
+

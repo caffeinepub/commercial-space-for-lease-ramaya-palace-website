@@ -1,0 +1,60 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-12T19:36:27.465Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 2,
+    "items": [
+      {
+        "id": "REQ-1",
+        "summary": "Add the uploaded image as a new static asset in the frontend and reference it from the Property Gallery.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/public/assets/generated/high-capacity-26-passenger-lifts.dim_1536x1024.png",
+          "frontend/src/components/Gallery.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/public/assets/generated/high-capacity-26-passenger-lifts.dim_1536x1024.png",
+          "frontend/src/components/Gallery.tsx"
+        ]
+      },
+      {
+        "id": "REQ-2",
+        "summary": "Update the Property Gallery list to include a new gallery card immediately after the existing “Terrace / Rooftop” item, with the visible label text set to “High Capacity 26 Passenger Lifts”.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Gallery.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Gallery.tsx"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "build-template/Dockerfile",
+    "build-template/LICENSE",
+    "build-template/README.md",
+    "build-template/deploy.sh",
+    "build-template/icp.yaml",
+    "build-template/src/backend/canister.yaml",
+    "build-template/src/frontend/canister.yaml",
+    "caffeine.lock.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/public/assets/generated/high-capacity-26-passenger-lifts.dim_1536x1024.png",
+    "frontend/src/components/Gallery.tsx",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "frontend/src/App.tsx": "Main application component that orchestrates all page sections including header, hero, new text-cta section, highlights, gallery, specifications, layouts, location, ideal tenants, FAQs, contact form, footer, and mobile sticky CTA with toast notifications.",
+  "frontend/src/hooks/useQueries.ts": "React Query hook for submitting contact form data to the backend actor with mutation handling and cache invalidation.",
+  "frontend/src/components/Header.tsx": "Sticky navigation header with the new gold embossed RAMAYA logo, refined luxury styling using champagne gold accents, enhanced shadows, glossy button effects, smooth transitions, and gradient backgrounds for premium appearance.",
+  "frontend/src/components/Hero.tsx": "Pure image-only hero section displaying the full-width front.png image with responsive scaling (object-fit contain) and a subtle scroll indicator arrow at the bottom.",
+  "frontend/src/components/QuickHighlights.tsx": "Icon-based highlight cards with luxury styling featuring champagne accents, enhanced shadows, smooth hover transitions with scale effects, and gradient backgrounds for premium feel.",
+  "frontend/src/components/Gallery.tsx": "Responsive image grid showcasing five property images (Front Elevation, Floor Plan, Basement Parking, Terrace/Rooftop, and High Capacity 26 Passenger Lifts) with hover effects and labels in a 2-column layout.",
+  "frontend/src/components/Specifications.tsx": "Detailed property specifications with luxury-styled cards, champagne gold accents, enhanced shadows, interactive map, floor breakdown, and updated Tailwind v3 classes (shrink-0).",
+  "frontend/src/components/Layouts.tsx": "Three flexible leasing option cards (full floor, split units, ground-floor focused) with download brochure CTA.",
+  "frontend/src/components/Location.tsx": "Location advantages section with luxury-styled cards featuring champagne accents, enhanced shadows, smooth hover transitions with scale effects, and updated Tailwind v3 classes (shrink-0).",
+  "frontend/src/components/IdealTenants.tsx": "Grid of eight tenant type cards showing suitable businesses (banks, NBFCs, restaurants, retail, offices, clinics) with reasons why the space fits each use case.",
+  "frontend/src/components/FAQs.tsx": "Accordion-style FAQ section with eight common questions about rent, leasing options, parking, lock-in, documentation, signage, utilities, and move-in timeline.",
+  "frontend/src/components/ContactForm.tsx": "Contact section displaying only the contact information card with phone, email, address, and call/WhatsApp action buttons, centered on the page with luxury styling and champagne gold accents.",
+  "frontend/src/components/Footer.tsx": "Footer with brand info, contact details, disclaimer about indicative details, and caffeine.ai attribution with heart icon.",
+  "frontend/src/components/MobileStickyCTA.tsx": "Fixed bottom mobile CTA bar with luxury gradient background, champagne gold styling, enhanced shadows, and glossy button effects for consistent premium appearance.",
+  "frontend/src/index.css": "Custom CSS with luxurious OKLCH color system featuring rich dark navy blue and soft champagne gold, elegant gradients, glossy effects, enhanced shadow utilities, and smooth animations for premium visual experience.",
+  "frontend/index.html": "HTML entry point with comprehensive SEO meta tags, Open Graph tags, Twitter cards, and LocalBusiness schema markup optimized for commercial real estate search.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with luxury color palette (navy and champagne variants), enhanced shadow utilities (luxury, champagne-glow), and custom animations for sophisticated UI effects.",
+  "frontend/src/components/TextCTA.tsx": "New text and CTA section positioned immediately below the hero, featuring the headline, \"Schedule Site Visit\" button with gold accent outline, and four pill-style badges in a responsive row with white background and navy blue text."
+}

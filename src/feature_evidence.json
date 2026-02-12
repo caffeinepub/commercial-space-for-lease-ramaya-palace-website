@@ -1,0 +1,43 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-add-the-uploaded-image-as-a-new-static-asset-in-the-frontend-and-reference-it-from-the-property-gallery",
+      "featureTitle": "Add the uploaded image as a new static asset in the frontend and reference it from the Property Gallery.",
+      "files": [
+        "frontend/src/components/Gallery.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "blob-storage@4.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-property-gallery-list-to-include-a-new-gallery-card-immediately-after-the-existing-terrace-rooftop-item-with-the-visible-label-text-set-to-high-capacity-26-passenger-lifts",
+      "featureTitle": "Update the Property Gallery list to include a new gallery card immediately after the existing “Terrace / Rooftop” item, with the visible label text set to “High Capacity 26 Passenger Lifts”.",
+      "files": [
+        "frontend/src/components/Gallery.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "blob-storage@4.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

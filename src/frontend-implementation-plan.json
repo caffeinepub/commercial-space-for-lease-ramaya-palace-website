@@ -1,0 +1,44 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add “High Capacity 26 Passenger Lifts” image to Property Gallery",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Add the uploaded elevator photo as a new static frontend asset and reference it in the Property Gallery.",
+      "acceptanceCriteria": [
+        "A new image file exists under frontend/public/assets/generated with the exact filename specified in the image requirements.",
+        "The app loads the new image via a /assets/generated/... path without any backend changes.",
+        "The image renders correctly in the browser (no broken image link)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/high-capacity-26-passenger-lifts.dim_1536x1024.png",
+          "operation": "create",
+          "description": "Add the provided uploaded image asset with the exact required filename so it can be served as a static file."
+        },
+        {
+          "path": "frontend/src/components/Gallery.tsx",
+          "operation": "modify",
+          "description": "Reference the new static asset from the gallery image list using the /assets/generated/high-capacity-26-passenger-lifts.dim_1536x1024.png path (no backend changes)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Insert a new Property Gallery card after “Terrace / Rooftop” labeled “High Capacity 26 Passenger Lifts” with appropriate alt text.",
+      "acceptanceCriteria": [
+        "In the gallery UI, the new item appears directly after the “Terrace / Rooftop” item.",
+        "The card’s displayed heading/label is exactly “High Capacity 26 Passenger Lifts”.",
+        "The new gallery item includes appropriate alt text describing the image content (in English)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Gallery.tsx",
+          "operation": "modify",
+          "description": "Update the images array to insert a new item immediately after the existing “Terrace / Rooftop” entry, with label exactly “High Capacity 26 Passenger Lifts” and an English alt text describing the photo (e.g., two elevator doors in a modern lobby), keeping layout/styling unchanged."
+        }
+      ]
+    }
+  ]
+}

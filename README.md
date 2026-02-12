@@ -1,2 +1,3 @@
-# commercial-space-for-lease-ramaya-palace-website
-Exported from Caffeine project: Add new Property Gallery image for “High Capacity 26 Passenger Lifts” after Terrace/Rooftop
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

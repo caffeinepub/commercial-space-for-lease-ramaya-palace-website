@@ -1,0 +1,57 @@
+{
+  "kind": "build_request",
+  "title": "Add new Property Gallery image for “High Capacity 26 Passenger Lifts” after Terrace/Rooftop",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Add the uploaded image as a new static asset in the frontend and reference it from the Property Gallery.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "can you include this image under property gallery but after terrace/rooftop with the heading of High Capacity 26 Passenger Lifts"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A new image file exists under frontend/public/assets/generated with the exact filename specified in the image requirements.",
+        "The app loads the new image via a /assets/generated/... path without any backend changes.",
+        "The image renders correctly in the browser (no broken image link)."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Update the Property Gallery list to include a new gallery card immediately after the existing “Terrace / Rooftop” item, with the visible label text set to “High Capacity 26 Passenger Lifts”.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-1"
+        ],
+        "quotes": [
+          "include this image under property gallery but after terrace/rooftop with the heading of High Capacity 26 Passenger Lifts"
+        ]
+      },
+      "acceptanceCriteria": [
+        "In the gallery UI, the new item appears directly after the “Terrace / Rooftop” item.",
+        "The card’s displayed heading/label is exactly “High Capacity 26 Passenger Lifts”.",
+        "The new gallery item includes appropriate alt text describing the image content (in English)."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under frontend/src/components/ui or any other paths listed in frontend.immutablePaths.",
+    "Keep the backend unchanged (no new Motoko methods/state) for this gallery-only update."
+  ],
+  "nonGoals": [
+    "Adding new backend APIs or storing gallery items in the backend.",
+    "Changing the overall gallery layout, styling, or adding new sections beyond the single requested gallery item."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Uploaded photo of two elevator doors in a modern lobby (high-capacity-26-passenger-lifts.dim_1536x1024.png)"
+    ],
+    "edits": []
+  }
+}
